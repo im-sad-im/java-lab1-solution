@@ -1,36 +1,32 @@
 public class MathMethodsDemo {
     public static void main(String[] args) {
-        // Method 1: Math.abs() - Absolute value
-        int num1 = -42;
-        double num2 = -3.14;
+        // Example values for demonstration
+        double x = 9.75;
+        double y = -4.5;
 
-        int absInt = Math.abs(num1);
-        double absDouble = Math.abs(num2);
+        // Square root
+        double sqrtResult = Math.sqrt(x);
+        System.out.println("Square root of " + x + " is: " + sqrtResult);
 
-        System.out.println("Absolute value of " + num1 + " is " + absInt);
-        System.out.println("Absolute value of " + num2 + " is " + absDouble);
+        // Power (x^2)
+        double powResult = Math.pow(x, 2);
+        System.out.println(x + " raised to the power of 2 is: " + powResult);
 
-        // Method 2: Math.sqrt() - Square root
-        double squareRoot = Math.sqrt(64.0);
-        System.out.println("Square root of 64 is " + squareRoot);
+        // Absolute value
+        double absResultX = Math.abs(x);
+        double absResultY = Math.abs(y);
+        System.out.println("Absolute value of " + x + " is: " + absResultX);
+        System.out.println("Absolute value of " + y + " is: " + absResultY);
 
-        // Method 3: Math.pow() - Exponentiation
-        double base = 2.0;
-        double exponent = 3.0;
-        double result = Math.pow(base, exponent);
-        System.out.println(base + " raised to the power of " + exponent + " is " + result);
-
-        // Method 4: Math.max() - Maximum value
-        int maxInt = Math.max(25, 37);
-        double maxDouble = Math.max(3.14, 2.71);
-        System.out.println("Maximum value is " + maxInt);
-        System.out.println("Maximum value is " + maxDouble);
-
-        // Method 5: Math.min() - Minimum value
-        int minInt = Math.min(15, 8);
-        double minDouble = Math.min(0.1, 0.01);
-        System.out.println("Minimum value is " + minInt);
-        System.out.println("Minimum value is " + minDouble);
+        //Random number generator
+        double randomResult = ( Math.random() *100);
+        System.out.println("Random number between 0.0 (inclusive) and 1.0 (exclusive): " + randomResult);
+        
+        // Floor (largest integer less than or equal to x)
+        double floorResultX = Math.floor(x);
+        double floorResultY = Math.floor(y);
+        System.out.println("Floor of " + x + " is: " + floorResultX);
+        System.out.println("Floor of " + y + " is: " + floorResultY);
     }
 }
 

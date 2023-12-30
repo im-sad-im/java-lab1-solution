@@ -1,0 +1,3 @@
+Hello, this is a sample text file for the ByteCharacterStream program.
+It can contain multiple lines and various characters.
+The program will convert all characters to uppercase and save the result in another file.
